@@ -35,7 +35,7 @@ login(token=hf_token)
 wandb.login(key=wb_token)
 
 run = wandb.init(
-    project="Fine-tune Llama [ {} ] ".format(identifier),
+    project="ColumnTypeDetection Fine-tune Llama [ {} ] ".format(identifier),
     job_type="training",
     anonymous="allow",
 )
