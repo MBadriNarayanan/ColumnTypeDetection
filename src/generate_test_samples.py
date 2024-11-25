@@ -46,7 +46,7 @@ def main():
     parser.add_argument(
         "--fine_tune_model",
         type=str,
-        default="fine_tune/llama-3.2-v1/checkpoint-150000",
+        default="fine_tune/llama-3.2-v1/checkpoint-12886",
         help="HuggingFace path of the base model to be used",
     )
     parser.add_argument(
