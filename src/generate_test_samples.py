@@ -65,7 +65,7 @@ def main():
     print("Arguments: {}".format(vars(args)))
     print("--------------------")
 
-    dataset = load_dataset("json", data_files = {"test": "prepared_data/llama_test.jsonl"})
+    dataset = load_dataset("json", data_files = {"test": args.test_data})
 
     if torch.cuda.get_device_capability()[0] >= 8:
         subprocess.run(["pip3", "install", "-qqq", "flash-attn"], check=True)
